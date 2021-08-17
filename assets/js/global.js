@@ -33,6 +33,39 @@ AOS.init();
     });
   });
 
+  /*-------------------------------------------------------------------------------
+		Open consultation modal using scroll depth
+	-------------------------------------------------------------------------------*/
+
+	let hasOpenedCounsultationModal = false;
+
+	function isVisibleConsultationModal({ event, eventLabel }) {
+		const EVENT_NAME = 'ScrollDistance';
+		const TARGET_ELEMENT = '#clients';
+		
+		return event === EVENT_NAME && eventLabel === TARGET_ELEMENT && !hasOpenedCounsultationModal;
+	}
+
+	function openConsultationModal() {
+		$('#consultationModal').modal('show');
+	}
+	
+	jQuery(function () {
+		jQuery.scrollDepth({
+			elements: ['#about', '#projects', '#clients', '#services', '#team', '#contacts', '#contacts .contact-address'],
+			eventHandler: function(data) {
+				if (isVisibleConsultationModal(data)) {
+					openConsultationModal();
+					hasOpenedCounsultationModal = !hasOpenedCounsultationModal;
+				}
+			}
+		});
+	});
+
+	$('.modal .close').click(function() {
+		$('#consultationModal').modal('hide')
+	});
+
   // Scroll to (Section)
   $(function() {
     $('a[href*=#js-scroll-to-]:not([href=#js-scroll-to-])').on('click', function() {
