@@ -128,7 +128,7 @@ header {
 
 .bg-overlay,
 .hero-img {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -171,12 +171,12 @@ header {
   position: absolute;
   left: 10px;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5spx;
   color: white;
   text-align: left;
-  top: 40%;
-  max-width: 440px;
+  top: 30%;
+  /* max-width: 440px; */
 }
 .carousel-indicators li {
   height: 7px;
@@ -307,6 +307,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.project-detail-img{
+  width: 100%;
+  display: block;
+}
+
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
@@ -409,3 +414,66 @@ p.help-block li {
     list-style:none;
     color:red;
 }
+
+#about {
+  padding: 90px 0 90px 0;
+}
+
+#about .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #596bf3;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+}
+
+.mySlides {display:none;}
