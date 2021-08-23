@@ -4,6 +4,7 @@ License: https://webthemez.com/license
 */
 
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url('assets/vendors/owlcarousel/assets/owl.carousel.css');
 @import url("https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap");
 .h1,
 .h2,
@@ -301,7 +302,7 @@ a:hover {
 	margin-top:16px;
 }
 
-.owl-carousel .item{
+/* .owl-carousel .item{
   margin: 3px;
 }
 .owl-carousel .owl-item img {
@@ -310,6 +311,16 @@ a:hover {
   height: 70px;
   margin: 0 auto;
 }
+
+.owl-carousel2 .item{
+  margin: 3px;
+}
+.owl-carousel2 .owl-item2 img {
+  display: block;
+  width: auto;
+  height: 250px;
+  margin: 0 auto;
+} */
 
 .project-detail-img{
   width: 100%;
@@ -562,4 +573,68 @@ p.help-block li {
   padding-top: 0;
   padding-bottom: 0px;
   border-bottom: 0px;
+}
+
+.owl-nav{
+  position: absolute;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.owl-nav .disabled{
+  color: #bcbcbc;
+}
+
+.owl-prev,
+.owl-next{
+  display: inline-block;
+  font-size: 2.8rem;
+  line-height: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.owl-prev:before{
+  font-family:"Ionicons";
+  content: "\f3d2";
+}
+
+.owl-next:before{
+  font-family:"Ionicons";
+  content: "\f3d3";
+}
+
+.owl-prev:hover,
+.owl-next:hover{
+  color: #8eabd8;
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: 5.857rem;
+}
+
+.owl-dot{
+  display: inline-block;
+  vertical-align: top;
+   margin:0 0.6rem;
+}
+
+.owl-dot span{
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #cccccc;
+}
+
+.owl-dot.active span{
+  background-color: #8eabd8;
+}
+
+.checked {
+  color: orange;
 }
