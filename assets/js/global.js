@@ -41,7 +41,7 @@ AOS.init();
 
 	function isVisibleConsultationModal({ event, eventLabel }) {
 		const EVENT_NAME = 'ScrollDistance';
-		const TARGET_ELEMENT = '#clients';
+		const TARGET_ELEMENT = '#rating';
 		
 		return event === EVENT_NAME && eventLabel === TARGET_ELEMENT && !hasOpenedCounsultationModal;
 	}
@@ -52,7 +52,7 @@ AOS.init();
 	
 	jQuery(function () {
 		jQuery.scrollDepth({
-			elements: ['#about', '#projects', '#clients', '#services', '#team', '#contacts', '#contacts .contact-address'],
+			elements: ['#top', '#services', '#about', '#rating', '#clients'],
 			eventHandler: function(data) {
 				if (isVisibleConsultationModal(data)) {
 					openConsultationModal();
@@ -65,6 +65,21 @@ AOS.init();
 	$('.modal .close').click(function() {
 		$('#consultationModal').modal('hide')
 	});
+
+  /*-------------------------------------------------------------------------------
+		Open Testimonial modal using scroll depth
+	-------------------------------------------------------------------------------*/
+
+  
+	$(window).on('load', function() {
+		$('#testimonModal').modal('show');
+	});
+
+		if (!!buildingArea) {
+			$('#testimonModal .modal-body').html(renderHtml)
+		}
+
+		event.preventDefault();
 
   // Scroll to (Section)
   $(function() {
