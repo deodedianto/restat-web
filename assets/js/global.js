@@ -41,7 +41,7 @@ AOS.init();
 
 	function isVisibleConsultationModal({ event, eventLabel }) {
 		const EVENT_NAME = 'ScrollDistance';
-		const TARGET_ELEMENT = '#rating';
+		const TARGET_ELEMENT = '#portfolio';
 		
 		return event === EVENT_NAME && eventLabel === TARGET_ELEMENT && !hasOpenedCounsultationModal;
 	}
@@ -52,7 +52,7 @@ AOS.init();
 	
 	jQuery(function () {
 		jQuery.scrollDepth({
-			elements: ['#top', '#services', '#about', '#rating', '#clients'],
+			elements: ['#top', '#services', '#about', '#rating', '#clients','#portfolio'],
 			eventHandler: function(data) {
 				if (isVisibleConsultationModal(data)) {
 					openConsultationModal();
