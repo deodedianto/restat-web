@@ -41,7 +41,7 @@ AOS.init();
 
 	function isVisibleConsultationModal({ event, eventLabel }) {
 		const EVENT_NAME = 'ScrollDistance';
-		const TARGET_ELEMENT = '#portfolio';
+		const TARGET_ELEMENT = '#rating';
 		
 		return event === EVENT_NAME && eventLabel === TARGET_ELEMENT && !hasOpenedCounsultationModal;
 	}
