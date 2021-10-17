@@ -679,7 +679,7 @@ p.help-block li {
 
 .card{
   /* width: 800px; */
-  min-height: 400px;
+  height: 450px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -712,13 +712,13 @@ p.help-block li {
 }
 
 .card-body{
-  width: 120%;
+  width: 100%;
   background: #5676a7 !important;
   min-height: 100%;
   height: auto;
-  margin-left: 20px;
+  /* margin-left: 5px; */
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 20px; */
 }
 
 .review{
