@@ -727,10 +727,15 @@ p.help-block li {
   margin-top: 30px;
 }
 
-.video {
-  position: absolute;
+video {
+  margin: 1rem;
+  width: 100%;
+}
+
+.vid {
+  /* background: blue; */
+  padding: 1rem;
   display: flex;
-  /* max-width: 800px; */
-  height: 90%;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
 }
