@@ -1,5 +1,6 @@
 (function($) {
   'use strict';
+  //PDF Dialog box
 
   // Activate Tooltips & Popovers
   $(function () {
