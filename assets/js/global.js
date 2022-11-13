@@ -42,7 +42,7 @@ AOS.init();
 
 	function isVisibleConsultationModal({ event, eventLabel }) {
 		const EVENT_NAME = 'ScrollDistance';
-		const TARGET_ELEMENT = '#clients';
+		const TARGET_ELEMENT = '#about';
 		
 		return event === EVENT_NAME && eventLabel === TARGET_ELEMENT && !hasOpenedCounsultationModal;
 	}
