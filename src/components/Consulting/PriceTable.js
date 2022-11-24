@@ -51,7 +51,7 @@ const PriceTable = () => {
                               </ul>
                             </div>
 
-                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Pengen Paket Basic" className="pricing-btn">
+                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Aku Mau Konsultasi" className="pricing-btn">
                               Get Started
                             </Link>
                           </div>
@@ -103,7 +103,7 @@ const PriceTable = () => {
                               </ul>
                             </div>
 
-                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Pengen Paket Premium" className="pricing-btn">
+                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Aku Mau Konsultasi" className="pricing-btn">
                               Get Started
                             </Link>
                           </div>
@@ -148,7 +148,7 @@ const PriceTable = () => {
                               </ul>
                             </div>
 
-                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Pengen Paket Standard" className="pricing-btn">
+                            <Link to="https://wa.me/6285945123233?text=Halo ReStat, Aku Mau Konsultasi" className="pricing-btn">
                               Get Started
                             </Link>
                           </div>

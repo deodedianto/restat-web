@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import bannerMainImg from "../../images/banner/banner-top.webp"
-import bannerBGImg from "../../images/banner/banner-bg-3.webp"
+import bannerMainImg from "../../images/banner/banner-top.png"
+import bannerBGImg from "../../images/banner/banner-bg-3.png"
 import shape30 from "../../images/shape/shape-30.png"
 import shape31 from "../../images/shape/shape-31.png"
 
